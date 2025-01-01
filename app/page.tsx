@@ -1,9 +1,18 @@
 import Image from "next/image";
+import {
+    Avatar,
+    AvatarFallback,
+    AvatarImage,
+  } from "@/components/ui/avatar"
 
 export default function Home() {
     return (
         <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
             <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+                <Avatar className="w-[100px] h-[100px]">
+                    <AvatarImage src="/me.png" alt="Albert Cai" />
+                    <AvatarFallback>AC</AvatarFallback>
+                </Avatar>
                 <h1 className="text-4xl font-bold">
                     Albert Cai
                 </h1>
